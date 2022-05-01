@@ -31,3 +31,13 @@
     color: white;
     background-color: var(--next-dark-blue);
 }
+.mobile-nav{
+    border-top: 2px solid var(--next-dark-blue);
+    position: fixed;
+    bottom: 0;
+}
+.mobile-nav-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+    color: inherit;
+}

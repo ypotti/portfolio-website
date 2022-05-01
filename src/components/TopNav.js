@@ -6,7 +6,7 @@ const TopNav = () => {
   return (
     <div className="d-none d-md-block w-100 bg-dark-blue ps-4 pt-4 pb-2 pe-4 d-md-flex justify-content-between align-items-center">
       <img src={Logo} alt="logo" className="main-logo" />
-      <div className="text-light">
+      <div>
         <ul className="d-flex ul me-5">
           <li className={`li`} onClick={() => setSelectedItem("Home")}>
             <a href="#" className="a">

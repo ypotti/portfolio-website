@@ -11,6 +11,10 @@
   --text-color: #d1d5e8;
 }
 
+.coloured-text{
+  color: var(--text-color);
+}
+
 .bg-dark-blue{
   background-color: var(--dark-blue);
 }
