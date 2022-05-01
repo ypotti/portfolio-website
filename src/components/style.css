@@ -29,7 +29,6 @@
 }
 .ul li:hover{
     color: white;
-    background-color: var(--next-dark-blue);
 }
 .mobile-nav{
     border-top: 2px solid var(--next-dark-blue);
