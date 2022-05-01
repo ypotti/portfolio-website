@@ -11,6 +11,10 @@
   --text-color: #d1d5e8;
 }
 
+.pink-text{
+  color: var(--dark-pink);
+}
+
 .coloured-text{
   color: var(--text-color);
 }

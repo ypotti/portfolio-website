@@ -11,7 +11,7 @@ export const PageContext = createContext();
 function App() {
   const [selectedPage, setSelectedPage] = useState("Home");
   return (
-    <div>
+    <>
       <PageContext.Provider value={{ selectedPage, setSelectedPage }}>
         <Navbar />
         <Home />
@@ -19,7 +19,7 @@ function App() {
         {/* <About />
       <Connect /> */}
       </PageContext.Provider>
-    </div>
+    </>
   );
 }
 
