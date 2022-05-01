@@ -10,9 +10,9 @@ function App() {
     <div>
       <Navbar />
       <Home />
-      <Work />
+      {/* <Work />
       <About />
-      <Connect />
+      <Connect /> */}
     </div>
   );
 }
