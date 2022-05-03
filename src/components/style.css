@@ -6,6 +6,10 @@
     width: auto;
     height: 40px;
 }
+.main-logo-small{
+    width: auto;
+    height: 50px;
+}
 .ul{
     list-style-type: none;
 }
@@ -43,4 +47,44 @@
 .hero-image{
     width: 50rem;
     height: auto;
+}
+.text-box{
+    margin-right: 1rem;
+    left: 2rem;
+    position: absolute;
+    z-index: 10;
+}
+
+.role-text{
+    color: var(--dark-pink);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.caption{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.butn{
+    color: #f7f7f7;
+    background-color: var(--dark-pink);
+    border: 0px;
+    margin-right: 2rem;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+}
+.butn-outline{
+    color: var(--dark-pink);
+    border: 1px solid var(--dark-pink);
+    background: transparent;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+}
+.height-home {
+    height: 100vh;
+}
+@media screen and (min-width:992px){
+    .height-home{
+        padding-top: 6rem;
+        height: auto;
+    }
 }
