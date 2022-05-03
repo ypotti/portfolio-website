@@ -7,7 +7,7 @@
   scroll-behavior: smooth;
   --dark-blue: #141628;
   --dark-pink: #fd4370;
-  --next-dark-blue: #1b1e52;
+  --next-dark-blue: #1b1e32;
   --text-color: #d1d5e8;
 }
 
@@ -21,4 +21,7 @@
 
 .bg-dark-blue{
   background-color: var(--dark-blue);
+}
+.bg-next-dark-blue{
+  background-color: var(--next-dark-blue);
 }

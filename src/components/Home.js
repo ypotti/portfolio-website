@@ -4,6 +4,7 @@ import hero from "../assests/hero_image";
 import { FiDownload } from "react-icons/fi";
 import Typewriter from "typewriter-effect";
 import logo from "../assests/logo.svg";
+import resume from "../assests/resume.pdf";
 
 const Home = () => {
   return (
@@ -44,7 +45,9 @@ const Home = () => {
             <button className="butn mb-2">Contact Me</button>
             <button className="butn-outline">
               <FiDownload className="me-2" />
-              Resume
+              <a className="a" href={resume} download="Yaswanth_Potti_Resume">
+                Resume
+              </a>
             </button>
           </div>
         </div>
