@@ -8,11 +8,11 @@ import logo from "../assests/logo.svg";
 const Home = () => {
   return (
     <div className="w-100 bg-dark-blue height-home text-light d-flex flex-column justify-content-start justify-content-lg-end">
-      <div className="d-md-none p-5">
+      <div className="d-md-none p-4" data-aos="fade-right">
         <img src={logo} alt="yash-pic" className="main-logo-small" />
       </div>
       <div className="d-flex justify-content-end align-items-end ps-4 mt-auto mb-auto">
-        <div className="align-self-center text-box">
+        <div className="align-self-center text-box" data-aos="fade-up">
           <h1>
             <div className="mb-3">Hey, I Am</div>
             <div className="role-text ms-1">
@@ -20,11 +20,12 @@ const Home = () => {
                 options={{ loop: true }}
                 onInit={(typewriter) => {
                   typewriter
+                    .pauseFor(1000)
                     .typeString("Yaswanth")
                     .pauseFor(2000)
                     .deleteAll()
                     .typeString("Web Debelo")
-                    .pauseFor(200)
+                    .pauseFor(100)
                     .deleteChars(4)
                     .typeString("veloper")
                     .pauseFor(2000)
@@ -47,7 +48,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="d-none d-lg-block">
+        <div className="d-none d-lg-block" data-aos="fade-down">
           <img src={hero} alt="hero" className="hero-image" />
         </div>
       </div>
