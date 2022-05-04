@@ -118,6 +118,9 @@
     .text-width{
         width: 75%;
     }
+    .padding-heavy{
+        padding-top: 14rem;
+    }
 }
 .line-small-div{
     width: 2rem;

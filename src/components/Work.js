@@ -16,7 +16,10 @@ const Work = () => {
           <h1>for you to see.</h1>
         </div>
       </div>
-      <div className="d-flex flex-column flex-lg-row  text-light justify-content-between align-items-center">
+      <div
+        className="d-flex flex-column flex-lg-row  text-light justify-content-between align-items-center"
+        data-aos="fade-right"
+      >
         <div className="order-0 order-lg-1 ">
           <img
             src={covidProjectImage}
