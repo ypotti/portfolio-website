@@ -88,3 +88,39 @@
         height: auto;
     }
 }
+.line-div{
+    width: 4rem;
+    height: 4px;
+    background-color: var(--dark-pink);
+}
+.section-heading{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.arrow-button{
+    background-color: #383D5E;
+    color: #f7f7f7;
+    border: 0px;
+    padding: 0.5em 1em;
+}
+.arrow-button:hover{
+    background-color: #545a7e;
+}
+.butn-icon{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.text-width{
+    width: 90%;
+}
+@media screen and (min-width:992px) {
+    .text-width{
+        width: 75%;
+    }
+}
+.line-small-div{
+    width: 2rem;
+    height: 4px;
+    background-color: var(--dark-pink);
+}

@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
     });
     AOS.refresh();
   }, []);
@@ -26,8 +26,8 @@ function App() {
         <Navbar />
         <Home />
         <Work />
-        {/* <About />
-      <Connect /> */}
+        <About />
+        {/* <Connect /> */}
       </PageContext.Provider>
     </>
   );
