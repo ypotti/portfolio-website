@@ -1,9 +1,25 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./style.css";
+import Swal from "sweetalert2";
 
 const Connect = () => {
   const form = useRef();
+
+  const fireSwal = () => {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+    });
+
+    Toast.fire({
+      icon: "success",
+      title: "Email Sent successfully",
+    });
+  };
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -18,6 +34,8 @@ const Connect = () => {
       .then(
         (result) => {
           console.log(result.text);
+          event.target.reset();
+          fireSwal();
         },
         (error) => {
           console.log(error.text);
@@ -25,7 +43,7 @@ const Connect = () => {
       );
   };
   return (
-    <div className="w-100 pb-5 text-wrap bg-next-dark-blue text-light ps-4 pt-5">
+    <div className="w-100 padding-bottom text-wrap bg-next-dark-blue text-light ps-4 pt-5">
       <div className="d-flex align-items-center" data-aos="fade-right">
         <div className="line-div"></div>
         <div className="section-heading ps-3">Connect</div>
@@ -58,9 +76,7 @@ const Connect = () => {
           </div>
           <div className="mb-2">
             <button className="butn" type="submit">
-              <a className="a" href="#">
-                Submit
-              </a>
+              <a className="a">Submit</a>
             </button>
           </div>
         </form>
