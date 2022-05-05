@@ -26,10 +26,10 @@ const Connect = () => {
 
     emailjs
       .sendForm(
-        "service_uf81oy7",
-        "template_ef42khe",
+        process.env.REACT_APP_EMAIL_SERVICE_ID,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID,
         form.current,
-        "3Qw26hfSHA_YRIg7q"
+        process.env.REACT_APP_EMAIL_KEY
       )
       .then(
         (result) => {
