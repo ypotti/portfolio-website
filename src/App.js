@@ -26,8 +26,8 @@ function App() {
         <Navbar />
         <Home />
         <Work />
-        <About />
-        {/* <Connect /> */}
+        {/* <About /> */}
+        <Connect />
       </PageContext.Provider>
     </>
   );

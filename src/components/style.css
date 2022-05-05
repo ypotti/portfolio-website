@@ -139,4 +139,13 @@
 	50% { transform: translate(0, 15px); }
 	100% { transform: translate(0, -0px); }
 }
-
+.form-input{
+    background-color: var(--dark-blue);
+    border: 0px;
+    border-left: 2px solid var(--dark-pink);
+    outline: none;
+    color: #f7f7f7;
+    padding: 1rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
