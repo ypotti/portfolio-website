@@ -27,10 +27,7 @@
 .a:hover{
     color: inherit;
 }
-.selected{
-    color: white;
-    background-color: var(--dark-pink);
-}
+
 .ul li:hover{
     color: white;
 }
@@ -42,8 +39,23 @@
 .mobile-nav-icon{
     width: 1.2rem;
     height: 1.2rem;
-    color: inherit;
 }
+
+.selected{
+    color: white;
+    background-color: var(--dark-pink);
+}
+.bordered{
+    border-top: 1px solid #484a54;
+}
+.coloured{
+    color: #838590;
+}
+.selected-mobile{
+    color: var(--text-color);
+    border-top: 2px solid var(--dark-pink);
+}
+
 .hero-image{
     width: 50rem;
     height: auto;
@@ -142,7 +154,7 @@
 .form-input{
     background-color: var(--dark-blue);
     border: 0px;
-    border-left: 2px solid var(--dark-pink);
+    border-left: 3px solid #383D5E;
     outline: none;
     color: #f7f7f7;
     padding: 1rem;

@@ -11,8 +11,8 @@ const MobileNav = () => {
         <div
           key={index}
           onClick={() => setSelectedPage(item.name)}
-          className={`d-flex flex-column align-items-center flex-fill p-3 ${
-            selectedPage === item.name && "selected"
+          className={`d-flex flex-column align-items-center flex-fill p-2 pt-3 pb-3 bordered coloured ${
+            selectedPage === item.name && "selected-mobile"
           }`}
         >
           {item.icon}

@@ -56,8 +56,8 @@ const Connect = () => {
       </div>
       <div className="mt-5 mb-5 coloured-text" data-aos="fade-right">
         <div className="mb-2  col-12 col-md-6 pe-3">
-          Reach me out by filling the short form below or by sending an email to{" "}
-          <span className="pink-text fw-bold">yaswanth456p@gmail.com</span>
+          Reach me out by filling the short form below or send an email to{" "}
+          <span className="pink-text ">yaswanth456p@gmail.com</span>
         </div>
       </div>
       <div className="col-12 col-md-6 col-lg-5 pe-3" data-aos="fade-down">

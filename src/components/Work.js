@@ -64,7 +64,7 @@ const Work = () => {
               {selectedProject.description}
             </div>
             <button className="butn">
-              <a className="a" href={selectedProject.url}>
+              <a className="a" href={selectedProject.url} target="_blank">
                 Visit Site
               </a>
               <MdOutlineKeyboardArrowRight className="ms-2" />
