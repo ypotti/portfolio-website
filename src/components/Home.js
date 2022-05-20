@@ -8,7 +8,10 @@ import resume from "../assests/resume.pdf";
 
 const Home = () => {
   return (
-    <div className="w-100 bg-dark-blue height-home text-light padding-heavy d-flex flex-column justify-content-start justify-content-lg-end">
+    <div
+      id="Home"
+      className="w-100 bg-dark-blue height-home text-light padding-heavy d-flex flex-column justify-content-start justify-content-lg-end"
+    >
       <div className="d-md-none p-4" data-aos="fade-right">
         <img src={logo} alt="yash-pic" className="main-logo-small" />
       </div>
@@ -22,7 +25,7 @@ const Home = () => {
                 onInit={(typewriter) => {
                   typewriter
                     .pauseFor(1000)
-                    .typeString("Yaswanth")
+                    .typeString("Yaswanth Potti")
                     .pauseFor(2000)
                     .deleteAll()
                     .typeString("Web Debelo")

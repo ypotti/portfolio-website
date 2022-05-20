@@ -3,7 +3,10 @@ import profile from "../assests/Image-group.png";
 
 const About = () => {
   return (
-    <div className="w-100 pt-5 pb-5 ps-4 bg-dark-blue d-flex flex-column">
+    <div
+      className="w-100 pt-5 pb-5 ps-4 bg-dark-blue d-flex flex-column"
+      id="About"
+    >
       <div className="text-light pb-5" data-aos="fade-right">
         <div className="d-flex align-items-center">
           <div className="line-div"></div>
@@ -15,12 +18,7 @@ const About = () => {
       </div>
       <div className="d-flex flex-column flex-lg-row mt-5 text-light justify-content-between align-items-center">
         <div className="order-0 order-lg-1 mb-3">
-          <img
-            src={profile}
-            alt="Yaswanth Potti"
-            // className="col-12 col-md-9 col-lg-12"
-            className="w-50"
-          />
+          <img src={profile} alt="Yaswanth Potti" className="w-50" />
         </div>
         <div className="order-1 order-lg-0">
           <div className="d-flex flex-column mb-5">

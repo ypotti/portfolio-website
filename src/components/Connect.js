@@ -43,7 +43,10 @@ const Connect = () => {
       );
   };
   return (
-    <div className="w-100 padding-bottom text-wrap bg-next-dark-blue text-light ps-4 pt-5">
+    <div
+      className="w-100 padding-bottom text-wrap bg-next-dark-blue text-light ps-4 pt-5"
+      id="Connect"
+    >
       <div className="d-flex align-items-center" data-aos="fade-right">
         <div className="line-div"></div>
         <div className="section-heading ps-3">Connect</div>

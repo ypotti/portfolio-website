@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./style.css";
 import { navItems } from "../constants.js";
 import { PageContext } from "../App";
+import Link from "react-scroll/modules/components/Link";
 
 const MobileNav = () => {
   const { selectedPage, setSelectedPage } = useContext(PageContext);
@@ -10,13 +11,14 @@ const MobileNav = () => {
       {navItems.map((item, index) => (
         <div
           key={index}
-          onClick={() => setSelectedPage(item.name)}
           className={`d-flex flex-column align-items-center flex-fill p-2 pt-3 pb-3 bordered coloured ${
             selectedPage === item.name && "selected-mobile"
           }`}
         >
-          {item.icon}
-          {item.name}
+          <Link to={item.name} onClick={() => setSelectedPage(item.name)}>
+            {item.icon}
+            {item.name}
+          </Link>
         </div>
       ))}
     </div>

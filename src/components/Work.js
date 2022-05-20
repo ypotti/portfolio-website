@@ -24,7 +24,10 @@ const Work = () => {
   };
 
   return (
-    <div className="bg-next-dark-blue ps-4 pt-5 pb-5 pe-5 d-flex flex-column justify-content-start">
+    <div
+      className="bg-next-dark-blue ps-4 pt-5 pb-5 pe-5 d-flex flex-column justify-content-start"
+      id="Work"
+    >
       <div className="w-100 text-light pb-5" data-aos="fade-right">
         <div className="d-flex align-items-center">
           <div className="line-div"></div>
