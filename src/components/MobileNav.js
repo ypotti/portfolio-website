@@ -9,17 +9,17 @@ const MobileNav = () => {
   return (
     <div className="d-md-none mobile-nav d-flex fixed-bottom bg-dark-blue coloured-text justify-content-around">
       {navItems.map((item, index) => (
-        <div
+        <Link
           key={index}
-          className={`d-flex flex-column align-items-center flex-fill p-2 pt-3 pb-3 bordered coloured ${
+          to={item.name}
+          onClick={() => setSelectedPage(item.name)}
+          className={`a d-flex flex-column align-items-center flex-fill p-2 pt-3 pb-3 bordered ${
             selectedPage === item.name && "selected-mobile"
           }`}
         >
-          <Link to={item.name} onClick={() => setSelectedPage(item.name)}>
-            {item.icon}
-            {item.name}
-          </Link>
-        </div>
+          {item.icon}
+          {item.name}
+        </Link>
       ))}
     </div>
   );

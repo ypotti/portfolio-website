@@ -5,6 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import Typewriter from "typewriter-effect";
 import logo from "../assests/logo.svg";
 import resume from "../assests/resume.pdf";
+import Link from "react-scroll/modules/components/Link";
 
 const Home = () => {
   return (
@@ -28,10 +29,7 @@ const Home = () => {
                     .typeString("Yaswanth Potti")
                     .pauseFor(2000)
                     .deleteAll()
-                    .typeString("Web Debelo")
-                    .pauseFor(100)
-                    .deleteChars(4)
-                    .typeString("veloper")
+                    .typeString("Web Developer")
                     .pauseFor(2000)
                     .deleteAll()
                     .typeString("UI Designer")
@@ -45,10 +43,12 @@ const Home = () => {
             Stick Around to know more about me
           </p>
           <div className="mt-4">
-            <button className="butn mb-2">Contact Me</button>
+            <Link to="Connect" offset={-50}>
+              <button className="butn mb-2">Contact Me</button>
+            </Link>
             <button className="butn-outline">
               <FiDownload className="me-2" />
-              <a className="a" href={resume} download="Yaswanth_Potti_Resume">
+              <a className="a" href={resume} download="_Yaswanth_Potti_Resume">
                 Resume
               </a>
             </button>
