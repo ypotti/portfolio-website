@@ -33,7 +33,6 @@ function App() {
   }, []);
 
   useEffect(() => {
-    console.log(pageOffset);
     if (pageOffset < 50) {
       setSelectedPage("Home");
     } else if (lastOffsetValue < pageOffset) {

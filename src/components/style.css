@@ -46,6 +46,7 @@
 
 .selected{
     color: white;
+    transition: 1000ms;
     background-color: var(--dark-pink);
 }
 .bordered{
@@ -55,8 +56,9 @@
     color: #838590;
 }
 .selected-mobile{
-    color: var(--text-color);
-    border-top: 3px solid var(--dark-pink);
+    color: var(--dark-pink);
+    transition: 1000ms;
+    border-top: 1px solid var(--dark-pink);
 }
 
 .hero-image{
@@ -66,7 +68,6 @@
 .text-box{
     margin-right: 1rem;
     left: 2rem;
-    /* position: absolute; */
     z-index: 10;
 }
 
