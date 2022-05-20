@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import profile from "../assests/Image-group.png";
 
-const About = () => {
+const About = ({ setAboutOffset }) => {
+  const aboutRef = useRef();
+
+  useEffect(() => {
+    setAboutOffset(aboutRef.current.offsetTop);
+  }, [aboutRef]);
+
   return (
     <div
       className="w-100 pt-5 pb-5 ps-4 bg-dark-blue d-flex flex-column"
       id="About"
     >
-      <div className="text-light pb-5" data-aos="fade-right">
+      <div className="text-light pb-5" data-aos="fade-right" ref={aboutRef}>
         <div className="d-flex align-items-center">
           <div className="line-div"></div>
           <div className="section-heading ps-3">About</div>

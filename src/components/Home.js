@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./style.css";
 import hero from "../assests/hero_image";
 import { FiDownload } from "react-icons/fi";
@@ -7,19 +7,28 @@ import logo from "../assests/logo.svg";
 import resume from "../assests/resume.pdf";
 import Link from "react-scroll/modules/components/Link";
 
-const Home = () => {
+const Home = ({ setHomeOffset }) => {
+  const homeRef = useRef();
+
+  useEffect(() => {
+    setHomeOffset(homeRef.current.offsetTop);
+  }, [homeRef]);
+
   return (
     <div
       id="Home"
       className="w-100 bg-dark-blue height-home text-light padding-heavy d-flex flex-column justify-content-start justify-content-lg-end"
     >
-      <div className="d-md-none p-4" data-aos="fade-right">
+      <div className="d-md-none p-4" data-aos="fade-right" ref={homeRef}>
         <img src={logo} alt="yash-pic" className="main-logo-small" />
       </div>
-      <div className="d-flex justify-content-end align-items-end ps-4 mt-auto mb-auto">
-        <div className="align-self-center text-box" data-aos="fade-up">
+      <div className="d-flex justify-content-end align-items-around ps-4 mt-auto mb-auto">
+        <div
+          className="align-self-center text-box me-auto ms-4"
+          data-aos="fade-up"
+        >
           <h1>
-            <div className="mb-3">Hey, I Am</div>
+            <div className="mb-3">Hey, I am</div>
             <div className="role-text ms-1">
               <Typewriter
                 options={{ loop: true }}

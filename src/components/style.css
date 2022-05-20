@@ -66,7 +66,7 @@
 .text-box{
     margin-right: 1rem;
     left: 2rem;
-    position: absolute;
+    /* position: absolute; */
     z-index: 10;
 }
 

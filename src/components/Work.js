@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { ImArrowLeft2, ImArrowRight2 } from "react-icons/im";
 import { projects } from "../constants";
 
-const Work = () => {
+const Work = ({ setWorkOffset }) => {
   const [selectedIndex, setSelectedIndex] = useState(1);
-
   const selectedProject = projects[selectedIndex];
+  const workRef = useRef();
+
+  useEffect(() => {
+    setWorkOffset(workRef.current.offsetTop);
+  }, [workRef]);
 
   const handleLeftClick = () => {
     let targetIndex = selectedIndex - 1;
@@ -28,7 +32,11 @@ const Work = () => {
       className="bg-next-dark-blue ps-4 pt-5 pb-5 pe-5 d-flex flex-column justify-content-start"
       id="Work"
     >
-      <div className="w-100 text-light pb-5" data-aos="fade-right">
+      <div
+        className="w-100 text-light pb-5"
+        data-aos="fade-right"
+        ref={workRef}
+      >
         <div className="d-flex align-items-center">
           <div className="line-div"></div>
           <div className="section-heading ps-3">Work</div>

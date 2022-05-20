@@ -1,10 +1,15 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "./style.css";
 import Swal from "sweetalert2";
 
-const Connect = () => {
+const Connect = ({ setConnectOffset }) => {
   const form = useRef();
+  const connectRef = useRef();
+
+  useEffect(() => {
+    setConnectOffset(connectRef.current.offsetTop);
+  }, [connectRef]);
 
   const fireSwal = () => {
     const Toast = Swal.mixin({
@@ -47,7 +52,11 @@ const Connect = () => {
       className="w-100 padding-bottom text-wrap bg-next-dark-blue text-light ps-4 pt-5"
       id="Connect"
     >
-      <div className="d-flex align-items-center" data-aos="fade-right">
+      <div
+        className="d-flex align-items-center"
+        data-aos="fade-right"
+        ref={connectRef}
+      >
         <div className="line-div"></div>
         <div className="section-heading ps-3">Connect</div>
       </div>
