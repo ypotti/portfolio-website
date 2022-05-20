@@ -22,7 +22,10 @@ const About = ({ setAboutOffset }) => {
           <h1>Get a closer look at who I am</h1>
         </div>
       </div>
-      <div className="d-flex flex-column flex-lg-row mt-5 text-light justify-content-between align-items-center">
+      <div
+        className="d-flex flex-column flex-lg-row mt-5 text-light justify-content-between align-items-center"
+        data-aos="fade-down"
+      >
         <div className="order-0 order-lg-1 mb-3">
           <img src={profile} alt="Yaswanth Potti" className="w-50" />
         </div>
@@ -51,8 +54,22 @@ const About = ({ setAboutOffset }) => {
               <div className="line-small-div"></div>
               <div className="section-heading ps-3 text-light ">{`Skills & Tools`}</div>
             </div>
-            <div className="coloured-text">
-              <div className="mb-3">Icons</div>
+            <div className="coloured-text mb-3">
+              <div className="mb-2">
+                <span className="me-2">Frontend:</span> HTML, CSS, Bootstrap,
+                Javascript, React.js.
+              </div>
+              <div className="mb-2">
+                <span className="me-2">Backend:</span> Node.js, Express.js,
+                Firebase.
+              </div>
+              <div className="mb-2">
+                <span className="me-2">UI Design:</span> Figma, Canva.
+              </div>
+              <div className="mb-2">
+                <span className="me-2">Miscellaneous:</span> JSON, REST API,
+                Git, GitHub.
+              </div>
             </div>
           </div>
           <button className="butn">
