@@ -176,3 +176,18 @@
         width: 70%;
     }
 }
+.Connect__link{
+    color: var(--text-color);
+    margin-right: 1em;
+    background-color: var(--dark-blue);
+    padding: 0.8em 1em;
+    cursor: pointer;
+}
+.Connect__link:hover{
+    background-color: var(--dark-pink);
+    color: white;
+}
+.Connect__Link__Icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}

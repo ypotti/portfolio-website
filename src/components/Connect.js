@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "./style.css";
 import Swal from "sweetalert2";
+import { SiGithub } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Connect = ({ setConnectOffset }) => {
   const form = useRef();
@@ -92,6 +94,19 @@ const Connect = ({ setConnectOffset }) => {
             </button>
           </div>
         </form>
+      </div>
+      <div className="d-flex justify-content-center justify-content-md-start col-12 col-md-6 align-items-end mt-5">
+        {/* Links */}
+        <a href="https://github.com/ypotti" target="_blank">
+          <div className="Connect__link">
+            <SiGithub className="Connect__Link__Icon" />
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/yaswanthpotti/" target="_blank">
+          <div className="Connect__link">
+            <FaLinkedinIn className="Connect__Link__Icon" />
+          </div>
+        </a>
       </div>
     </div>
   );
