@@ -1,5 +1,5 @@
-import React, { useContext, useEffect, useRef } from "react";
-import profile from "../assests/Image-group.png";
+import React, { useEffect, useRef } from "react";
+import profile from "../assests/yaswanth.png";
 
 const About = ({ setAboutOffset }) => {
   const aboutRef = useRef();
@@ -10,10 +10,10 @@ const About = ({ setAboutOffset }) => {
 
   return (
     <div
-      className="w-100 pt-5 pb-5 ps-4 bg-dark-blue d-flex flex-column"
+      className="w-100 pt-5 pb-5 p-4 bg-dark-blue d-flex flex-column"
       id="About"
     >
-      <div className="text-light pb-5" data-aos="fade-right" ref={aboutRef}>
+      <div className="text-light pb-3" data-aos="fade-right" ref={aboutRef}>
         <div className="d-flex align-items-center">
           <div className="line-div"></div>
           <div className="section-heading ps-3">About</div>
@@ -22,14 +22,17 @@ const About = ({ setAboutOffset }) => {
           <h1>Get a closer look at who I am</h1>
         </div>
       </div>
-      <div
-        className="d-flex flex-column flex-lg-row mt-5 text-light justify-content-between align-items-center"
-        data-aos="fade-down"
-      >
-        <div className="order-0 order-lg-1 mb-3">
-          <img src={profile} alt="Yaswanth Potti" className="w-50" />
+      <div className="d-flex flex-column flex-lg-row  text-light justify-content-between align-items-center">
+        <div
+          className="order-0 order-lg-1 mb-3 col-12 col-md-6 text-center"
+          data-aos="fade-down"
+        >
+          <img src={profile} alt="Yaswanth Potti" className="About__image" />
         </div>
-        <div className="order-1 order-lg-0">
+        <div
+          className="order-1 order-lg-0 col-12 col-md-6 "
+          data-aos="fade-right"
+        >
           <div className="d-flex flex-column mb-5">
             <div className="d-flex align-items-center mb-3">
               <div className="line-small-div"></div>

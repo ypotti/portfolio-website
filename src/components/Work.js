@@ -29,7 +29,7 @@ const Work = ({ setWorkOffset }) => {
 
   return (
     <div
-      className="bg-next-dark-blue ps-4 pt-5 pb-5 pe-5 d-flex flex-column justify-content-start"
+      className="bg-next-dark-blue ps-4 pt-5 pb-5 pe-5 d-flex flex-column justify-content-start "
       id="Work"
     >
       <div
@@ -47,13 +47,16 @@ const Work = ({ setWorkOffset }) => {
         </div>
       </div>
       <div
-        className="d-flex flex-column flex-lg-row  text-light justify-content-between align-items-center"
+        className="d-flex flex-column flex-lg-row h-75  text-light justify-content-between align-items-center"
         data-aos="fade-right"
       >
-        <div className="order-0 order-lg-1 mb-3 floating" data-aos="fade-right">
+        <div
+          className="order-0 order-lg-1 mb-3 floating col-12 col-lg-6"
+          data-aos="fade-right"
+        >
           {selectedProject.pic}
         </div>
-        <div className="order-1 order-lg-0 ms-4">
+        <div className="order-1 order-lg-0 ms-4 col-12 col-lg-6 d-flex flex-column justify-content-start">
           <div className="d-flex align-items-center mb-5">
             <button className="arrow-button me-3" onClick={handleLeftClick}>
               <ImArrowLeft2 className="butn-icon" />
