@@ -44,7 +44,7 @@ const About = ({ setAboutOffset }) => {
               </div>
               <div className="mb-3">
                 Digital design has been an interest of mine for many years, and
-                I work with anything from UI design to front-end development.
+                I work with anything from UI design to Frontend development.
               </div>
               <div className="mb-3">
                 All the skills and tools I use, are self-taught over many years
